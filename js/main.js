@@ -13,4 +13,11 @@ $(function () {
     $('.popup button').on('click', function () {
         $(this).parent().hide();
     });
+
+    $('#f_link').on('change', function () {
+        // console.log('change', $(this).val());
+        var link = $(this).val();
+
+        link && window.open(link)
+    })
 })
